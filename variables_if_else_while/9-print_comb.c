@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	int ch = 48;
-	int comma = 44;
-	int space = 32;
+	int num = 48;
 
-	while (ch <= 57)
+	for (num; num <= 57; num++)
 	{
-		putchar(ch);
-		putchar(comma);
-		putchar(space);
-		ch++;
+		putchar(num);
+		if (num != 57)
+		{			
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
