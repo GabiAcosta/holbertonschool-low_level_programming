@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -12,16 +12,20 @@ int main(void)
 	{
 		if (n % 15 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		} else if (n % 5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		} else if (n % 3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		} else
 		{
-			printf("%d ", n);
+			printf("%d", n);
+		}
+		if (n != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
