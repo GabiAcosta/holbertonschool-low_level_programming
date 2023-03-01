@@ -13,7 +13,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n >= 0)
 	{
-		while ((src[count]) && (n > 0))
+		while ((dest[count]) && (n > 0))
 		{
 			dest[count] = src[count];
 			count++;
