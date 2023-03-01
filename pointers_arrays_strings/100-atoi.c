@@ -6,7 +6,8 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1, count = 0, num = 0, stop = 0;
+	int sign = 1, count = 0, stop = 0;
+	unsigned int num = 0;
 
 	while ((s[count]) && (stop == 0))
 	{
