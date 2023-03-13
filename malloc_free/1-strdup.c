@@ -12,11 +12,8 @@ char *_strdup(char *str)
 {
 	int len = _strlen(str);
 	char *copy, *aux;
-	
-	if (str == NULL)
-		return (NULL);
-	aux = malloc(sizeof(char) * (len + 1));
 
+	aux = malloc(sizeof(char) * (len + 1));
 	if (aux == NULL)
 		exit(1);
 	copy = _strcpy(aux, str);
@@ -24,9 +21,9 @@ char *_strdup(char *str)
 	return (copy);
 }
 /**
- * _strlen - returns the length of a string.
- * @s: the string to be calculed.
- * Return: the length of a string.
+ * _strlen - returns the length of a string
+ * @s: the string to be calculed
+ * Return: the length of a string
  */
 int _strlen(char *s)
 {
