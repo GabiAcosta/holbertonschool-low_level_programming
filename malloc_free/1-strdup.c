@@ -10,8 +10,12 @@ char *_strcpy(char *dest, char *src);
  */
 char *_strdup(char *str)
 {
-	int len = _strlen(str);
+	int len = 0;
 	char *copy, *aux;
+
+	if (str == NULL)
+		return (NULL);
+	len = _strlen(str);
 
 	aux = malloc(sizeof(char) * (len + 1));
 	if (aux == NULL)
