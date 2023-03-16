@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n);
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int len, len2;
+	unsigned int len, len2, i;
 	char *aux;
 
 	if (s1 == NULL)
@@ -25,8 +25,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = len2;
 	aux = malloc(len + n + 1);
 	if (aux == NULL)
-	{
 		return (NULL);
+	for (i = 0; i < len + n + 1; i++)
+	{
+		aux[i] = '\0';
 	}
 	_strncat(aux, s1, len);
 	_strncat(aux, s2, n);
