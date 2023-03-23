@@ -6,4 +6,4 @@
 	- name, type = char *
 	- age, type = float
 	- owner, type = char *
-Later we define a new type "dog_t" as a new name for the type struct dog.
+- Later we define a new type "dog_t" as a new name for the type struct dog.
