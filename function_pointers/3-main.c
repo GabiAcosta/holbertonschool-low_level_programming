@@ -1,10 +1,11 @@
 #include "3-calc.h"
 /**
  * main - program that performs simple operations
- *
+ * @argc: argument count
+ * @argv: argument vector
  * Return: Always 0 (Success)
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc == 4)
 	{
@@ -13,7 +14,7 @@ int main (int argc, char *argv[])
 
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[3]);
-		
+
 		p = get_op_func(argv[2]);
 		if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
 		{
