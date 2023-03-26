@@ -17,6 +17,12 @@ void print_float(va_list args);
 void print_string(va_list args);
 
 /* structures */
+/**
+ * struct format - Struct format
+ *
+ * @c: the format
+ * @f: The function associated
+ */
 typedef struct format
 {
 	char c;
